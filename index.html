@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>star wars</title>
+</head>
+
+<body>
+  <main class="main">
+    <h1 class="title">Вселенная "Звездные войны"</h1>
+    <div class="search">
+      <h2>Кого или что будем искать?</h2>
+      <div class="search__block">
+        <!-- выпадающий список -->
+        <label for="type" class="type">Выберите сущность для поиска</label>
+        <select name="type" id="type">
+          <option value="films">Фильм</option>
+          <option value="people">Персонаж</option>
+          <option value="planets">Планеты</option>
+          <option value="species">Разновидность персонажа</option>
+          <option value="starships">Звездные корабли</option>
+          <option value="vehicles">Транспортные средства</option>
+        </select>
+        <!-- ввод кода для поиска -->
+        <label for="idAtr" class="type">Введите id для выбранной сущности</label>
+        <input type="number" name="idAtr" id="idAtr">
+        <!-- кнопка для поиска -->
+        <button id="btn" onclick="onClick()">Найти</button>
+      </div>
+      <div class="path">
+        <div class="load progress"></div>
+      </div>
+
+      <div class="search__result">
+        <p id="text"></p>
+        <p id="result"></p>
+      </div>
+    </div>
+  </main>
+  <script src="./index.js"></script>
+</body>
+
+</html>

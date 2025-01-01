@@ -1,0 +1,76 @@
+.main {
+  background-color: rgb(138, 190, 132);
+  padding: 20px;
+  border: 15px solid rgb(19, 60, 11);
+  border-radius: 50px;
+}
+
+.title {
+  text-align: center;
+}
+
+.type {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+button {
+  border-radius: 10px;
+  background-color: rgb(250, 190, 61);
+  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.search,
+.search__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 15px;
+}
+
+.search__result {
+  background-color: lightgoldenrodyellow;
+  padding: 20px;
+  border: 15px solid rgb(19, 60, 11);
+  border-radius: 50px;
+  width: 80%;
+}
+
+.progress {
+  display: none;
+}
+
+.load {
+  animation: go-left-right 1s infinite alternate;
+  /* применить анимацию "go-left-right" на элементе
+    продолжительностью 3 секунды
+    количество раз: бесконечно (infinite)
+    менять направление анимации каждый раз (alternate)
+    */
+  position: relative;
+  border: 2px solid green;
+  width: 50px;
+  height: 10px;
+  background: lime;
+}
+.path {
+  width: 80%;
+  height: 10px;
+  margin-bottom: 10px;
+}
+@keyframes go-left-right {
+  /* объявляем имя анимации: "go-left-right" */
+  from {
+    left: 0px;
+  } /* от: left: 0px */
+  to {
+    left: calc(100% - 50px);
+  } /* до: left: 100%-50px */
+}
